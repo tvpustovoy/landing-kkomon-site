@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<extension version="2.5" type="template">
+	<name>KKOmon</name>
+	<creationDate>2014-11-12</creationDate>
+	<author>Anna Manaenkova</author>
+	<authorEmail>witzawitz@gmail.com</authorEmail>
+	<authorUrl>http://witzawitz.com</authorUrl>
+	<copyright>Anna Manaenkova 2014</copyright>
+	<license>GNU/GPL</license>
+	<version>0.1</version>
+	<description>KKOmon</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>img</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>html</folder>
+	</files>
+	<positions>
+		<position>header</position>
+		<position>menu</position>
+		<position>slider</position>
+		<position>main-news</position>
+		<position>main-docs</position>
+		<position>main-vk</position>
+		<position>main-projects</position>
+		<position>content</position>
+		<position>footer</position>
+		<position>js</position>
+	</positions>
+</extension>
