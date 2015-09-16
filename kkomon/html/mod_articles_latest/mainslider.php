@@ -16,29 +16,24 @@
 ?>
 <?php  ?>
 <div class="slider-container">
-<div id="slider" class="slider">
-<div class="slider-image">
-<?php for ($i=0; $i<$n; $i++) : ?>
-<img src="<?php echo getImage1($list[$i]); ?>" alt="" id="slider<?php echo $i+1; ?>" <?php if ($i==0) echo 'class="active"'; ?> />
-<?php endfor; ?>
+	<div id="slider" class="slider">
+		<div class="slider-image">
+			<?php for ($i=0; $i<$n; $i++) : ?>
+			<img src="<?php echo getImage1($list[$i]); ?>" alt="" id="slider<?php echo $i+1; ?>" <?php if ($i==0) echo 'class="active"'; ?> />
+			<?php endfor; ?>
+		</div>
+		<div class="slider-tabs">
+			<?php for ($i=0; $i<$n; $i++) : ?>
+			<div class="slider-tab<?php if ($i==0) echo ' active'; ?>" data-target="slider<?php echo $i+1; ?>">
+				<div class="slider-tab-inner">
+					<div class="slider-tab-inner-text">
+						<a href="<?php echo $list[$i]->link; ?>"><?php echo $list[$i]->title; ?></a>
+						<div class="slider-dt"><?php echo JHtml::_('date', $list[$i]->publish_up, 'j F Y'); ?></div>
+					</div>
+				</div>
+				<div class="slider-tab-inner-helper"></div>
+			</div>
+			<?php endfor; ?> 
+		</div>
+	</div>
 </div>
-<div class="slider-tabs">
-<?php for ($i=0; $i<$n; $i++) : ?>
-<div class="slider-tab<?php if ($i==0) echo ' active'; ?>" data-target="slider<?php echo $i+1; ?>">
-<a href="<?php echo $list[$i]->link; ?>"><?php echo $list[$i]->title; ?></a>
-<div class="slider-dt"><?php echo JHtml::_('date', $list[$i]->publish_up, 'j F Y'); ?></div>
-</div>
-<?php endfor; ?> 
-</div>
-</div>
-</div>
-<script>
-$().ready(function(){
-    $('.slider-tab').click(function(){
-	$('.slider-tab').removeClass('active');
-	$(this).addClass('active');
-	$('.slider-image img').removeClass('active');
-	$('#' + $(this).data('target')).addClass('active');
-    });
-});
-</script>

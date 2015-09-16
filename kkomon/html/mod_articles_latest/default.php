@@ -27,7 +27,7 @@
 <?php foreach ($list as $item) : ?>
 	<li>
 		<div class="main-news-image">
-			<a href="<?php echo $item->link; ?>"><?php echo getImage($item); ?></a>
+			<a class="main-news-image-container" href="<?php echo $item->link; ?>"><?php echo getImage($item); ?></a>
 		</div>
 		<div class="main-news-info">
 			<div class="main-news-dt"><?php echo JHtml::_('date', $item->publish_up, 'j F Y'); ?></div>

@@ -19,6 +19,7 @@
 	</files>
 	<positions>
 		<position>header</position>
+		<position>search</position>
 		<position>menu</position>
 		<position>slider</position>
 		<position>main-news</position>

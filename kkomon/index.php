@@ -12,15 +12,20 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" type="image/x-icon" href="/templates/kkomon/img/logo.png" />
-		<link rel="stylesheet" type="text/css" href="/templates/kkomon/css/kkomon.css">
+		<link rel="stylesheet" type="text/css" href="/templates/kkomon/css/style.css">
+		<link rel="stylesheet" type="text/css" href="/templates/kkomon/css/media.css">
 		<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-		<script src="/templates/kkomon/js/kkomon.js"></script>
+		<script src="/templates/kkomon/js/jquery-1.11.3.min.js"></script>
+		<script src="/templates/kkomon/js/common.js"></script>
 	</head>
 	<body>
 		<div class="container">
 		<?php if ($this->countModules('header')) { ?>
-			<header><jdoc:include type="modules" name="header" /></header>
+			<header>
+				<jdoc:include type="modules" name="header" />
+				<jdoc:include type="modules" name="search" />
+			</header>
 		<?php } ?>
 		<?php if ($this->countModules('menu')) { ?>
 			<nav class="menu-container"><jdoc:include type="modules" name="menu" /></nav>
