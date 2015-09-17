@@ -5,9 +5,20 @@
 
 }
 
+@media only screen and (max-width : 1024px) {
+    .main-news, .main-docs {
+    	width: 50%;
+    }
+    .main-vk {
+    	width: 100%;
+    }
+}
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+    .slider-container .slider-dt {
+        display: none;
+    }
 }
 
 /* Small Devices, Tablets */

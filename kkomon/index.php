@@ -17,6 +17,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 		<script src="/templates/kkomon/js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="//vk.com/js/api/openapi.js?116"></script>
 		<script src="/templates/kkomon/js/common.js"></script>
 	</head>
 	<body>
