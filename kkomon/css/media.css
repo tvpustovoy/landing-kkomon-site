@@ -6,36 +6,203 @@
 }
 
 @media only screen and (max-width : 1024px) {
-    .main-news, .main-docs {
-    	width: 50%;
-    }
-    .main-vk {
-    	width: 100%;
-    }
+	.menu-container .mobile-nav-toggle {
+		display: block;
+	}
+	.menu-container ul.menu {
+		display: none;
+		margin-top: 55px;
+	}
+	.menu-container ul.menu li {
+		float: none;
+	}
+	.slider-container .slider-tabs .slider-tab a {
+		font-size: 12px;
+	}
+	.main-news, .main-docs {
+		width: 50%;
+	}
+	.main-vk {
+		width: 100%;
+	}
+	.main-projects-title { font-size: 14px; }
+	.main-project-title { width: 150px; }
+	.main-project-title a { font-size: 12px; }
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-    .slider-container .slider-dt {
-        display: none;
+@media only screen and (max-width : 800px) {
+    .slider-container .slider-tabs .slider-dt {
+    	font-size: 10px;
     }
+    .main-project-title a { font-size: 14px; }
+    .main-project-title { width: 130px; }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	header .search {
+		display: none;
+	}
+	.slider-container .slider-tabs .slider-tab[data-target="slider3"] {
+		display: none;
+	}
+	.slider-container .slider-tabs .slider-tab {
+		height: 157px;
+		max-height: 157px;
+	}
+	.main-projects-title {
+		text-align: center;
+		width: 100%;
+		font-size: 16px;
+		color: #000;
+		margin-bottom: 20px;
+	}
+	.main-project {
+		width: 49%;
+	}
+	.main-project-title {
+		width: 130px;
+	}
+}
 
+@media only screen and (max-width : 600px) {
+	header .logo {
+		margin: 15px 25px;
+	}
+	header .motto a {
+		font-size: 14px;
+	}
+	.slider-container {
+		padding: 0;
+	}
+	.slider-container .slider-tabs .slider-tab[data-target="slider2"] {
+		display: none;
+	}
+	.slider-container .slider-tabs .slider-tab {
+		height: auto;
+	}
+	.slider-container .slider-tabs .slider-tab a {
+		font-size: 16px;
+	}
+	.slider-container .slider-tabs .slider-dt {
+		font-size: 12px;
+	}
+	.slider-container .slider-image {
+		width: 100%;
+		padding: 5px;
+	}
+	.slider-container .slider-image img {
+		height: auto;
+	}
+	.slider-container .slider-tabs {
+		width: 100%;
+		padding-left: 0;
+	}
+	.slider-container .slider-tabs .slider-dt {
+		text-align: right;
+	}
+	.slider-container .slider-tabs .slider-tab.active:after {
+		display: none;
+	}
+	.main-news, .main-docs {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.main-project {
+		text-align: center;
+		vertical-align: top;
+	}
+	.main-project img {
+		margin-right: 0;
+		margin-bottom: 10px;
+		height: 120px;
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	header .motto {
+		width: 150px;
+		margin: 15px 0;
+	}
+	header .motto a {
+		font-size: 12px;
+	}
+	.main-projects {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	.main-project:last-child {
+		padding-right: 0;
+		text-align: left;
+	}
+	.main-project-title {
+		text-align: left;
+	}
+	.main-project img {
+		height: 100px;
+	}
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-
+	header .logo {
+		margin: 15px 20px;
+	}
+	.menu-container ul.menu {
+		min-height: 300px;
+	}
+	.main-news ul li {
+		position: relative;
+	}
+	.main-news-image {
+		width: 30%;
+		margin-bottom: 8px;
+		margin-top: 15px;
+	}
+	.main-news-info {
+		width: 100%;
+		padding-left: 0;
+	}
+	.main-news-dt {
+		position: absolute;
+		top: 0;
+	}
+	.main-project {
+		width: 100%;
+		padding-right: 0;
+		vertical-align: middle;
+		margin-bottom: 15px;
+		text-align: left;
+	}
+	.main-project img {
+		margin-right: 15px;
+		margin-bottom: 0;
+		height: auto;
+		width: 80px;
+	}
 }
 
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 240px) {
+	header .logo {
+		width: 100%;
+		text-align: center;
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 0;
+	}
+	header .motto {
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+		text-align: center;
+	}
+	.main-project-title {
+		width: auto;
+	}
+}
 
 /*==========  Mobile First Method  ==========*/
 
@@ -56,7 +223,9 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+    .container {
+        width: 960px
+    }
 }
 
  /* Large Devices, Wide Screens */

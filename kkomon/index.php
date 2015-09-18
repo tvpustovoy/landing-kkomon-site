@@ -29,7 +29,15 @@
 			</header>
 		<?php } ?>
 		<?php if ($this->countModules('menu')) { ?>
-			<nav class="menu-container"><jdoc:include type="modules" name="menu" /></nav>
+			<nav class="menu-container">
+				<button type="button" class="mobile-nav-toggle">
+					<span class="sr-only">Навигация</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<jdoc:include type="modules" name="menu" />
+			</nav>
 		<?php } ?>
 		<div class="content">
 			<?php if ($this->countModules('slider')) { ?>
